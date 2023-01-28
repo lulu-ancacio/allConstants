@@ -56,7 +56,6 @@ allconstants.backhouse            = 1.4560749485826896
 allconstants.komornikLoreti       = 1.7872316501829659
 allconstants.heathBrownMoroz      = 0.0013176411548531
 allconstants.mrb                  = 0.1878596424620671
-allconstants.prime                = 0.4146825098511116
 allconstants.foias                = 1.1874523511265010
 allconstants.taniguchi            = 0.6782344919173919
 allconstants.varga                = 9.2890254919208189
