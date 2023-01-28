@@ -31,7 +31,6 @@ allconstants.twinPrimes           = 0.6601618158468695
 allconstants.prouhetThueMorse     = 0.4124540336401075
 allconstants.golombDickman        = 0.6243299885435508
 allconstants.fellerTornier        = 0.6613170494696223
-allconstants.salem                = 1.1762808182599175
 allconstants.khinchin             = 2.6854520010653064
 allconstants.levy                 = 1.1865691104156254
 allconstants.copelandErdos        = 0.2357111317192329
