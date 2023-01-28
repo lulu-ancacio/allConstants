@@ -61,7 +61,6 @@ allconstants.taniguchi            = 0.6782344919173919
 allconstants.varga                = 9.2890254919208189
 allconstants.pell                 = 0.5805775582048924
 allconstants.wyler                = 0.0072973481300318
-allconstants.loch                 = 0.9702701143920339
 allconstants.porter               = 1.4670780794339754
 allconstants.lehmer               = 0.5926327182016361
 allconstants.rabbit               = 0.7098034428612913
