@@ -39,7 +39,6 @@ allconstants.gompertz             = 0.5963473623231940
 allconstants.vanDerPauW           = 4.5323601418271938
 allconstants.magicAngle           = 0.9553166181245092
 allconstants.artin                = 0.3739558136192022
-allconstants.porter               = 1.4670780794339754
 allconstants.lochs                = 0.9702701143920339
 allconstants.deViccisTesseract    = 1.0074347568842793
 allconstants.niven                = 1.7052111401053677
