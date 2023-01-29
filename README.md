@@ -91,28 +91,53 @@ Embora seja impossível repoduzir a irracionalidade das constantes supracitas, p
 <img src="https://user-images.githubusercontent.com/110111018/215250118-db63f415-0706-444a-b8ec-ddaf8ded7557.png">
 <br>
 <p>
-Estabelecendo <i>exp = ζ'(2)</i>, <i>A</i> como a Constante de Glaisher–Kinkelin definida no módulo e N como a expressão que define A na imagem a cima, temos: 
+Vamos computar a igualdade da Constante de Glaisher–Kinkelin utilizando a definição a cima, onde serão manuseados a Constante Euler-Mascheroni (γ) e a própria constante supracitada.
+<br>
+Estabelemos <i>exp = ζ'(2)</i>, <i>A</i> como a Constante de Glaisher–Kinkelin definida no módulo, <i>definicao</i> como a expressão que define A na imagem a cima e <i>y</i> como a Constante Euler-Mascheroni, fazemos a comparação: 
 </p>
 
 ```lua
-local exp = ((math.pi^2)/6)*(allConstants.eulerMascheroni+math.log(2*math.pi, math.exp(1))-12*math.log(allConstants.glaisherKinkelin, math.exp(1)))
 local A = allConstants.glaisherKinkelin
-local N = ((2*math.pi)^(1/12)) * (math.exp(((allConstants.eulerMascheroni*math.pi^2)/6)-exp))^(1/(2*math.pi^2))
+local y = allConstants.eulerMascheroni
+local exp = ((math.pi^2)/6)*(y+math.log(2*math.pi, math.exp(1))-12*math.log(A, math.exp(1)))
+local definicao = ((2*math.pi)^(1/12)) * (math.exp(((Y*math.pi^2)/6)-exp))^(1/(2*math.pi^2))
 
 print(A)
-print(N)
+print(definicao)
 
 >> 1.2824271291006
 >> 1.2824271291006
 ```
 
 <p>
-Ou seja, foi possível transcrever a definição da Constante de Glaisher–Kinkelin  com a máxima precisão, logrando de resultados satisfatórios tanto no valor predefinido da constante quanto na expressão computada.
+Ou seja, foi possível transcrever a definição da Constante de Glaisher–Kinkelin com a máxima precisão, logrando de resultados satisfatórios tanto no valor predefinido da constante quanto na expressão computada.
 </p>
-<br>
-<h3>Constante Omega</h3>
-<img src="https://user-images.githubusercontent.com/110111018/215250892-679b4028-5f21-4a7b-b67e-4aa22152d16f.png">
-<h3>Constante de Plástico</h3>
-<img src="https://user-images.githubusercontent.com/110111018/215251257-9eeb0f41-1f95-4c14-a457-4dd2e9d6d06f.png">
+
 <h3>Constante de Sierpiński</h3>
 <img src="https://user-images.githubusercontent.com/110111018/215251254-3e8860b6-53c0-4d83-922f-5bcee9a3c6d5.png">
+<br>
+<p>
+Agora testaremos o valor estabelecido para a Constante de Sierpiński com a construção de sua definição encontrada a cima. Temos aqui <i>K</i> representando a váriavel mormente no tópico, <i>y</i> a Constante Euler-Mascheroni, <i>G</i> a Constante de Gauss e <i>definicao</i> a expressão resultante em K.
+</p>
+
+```lua
+local K = allConstants.sierpinski
+local y = allConstants.eulerMascheroni
+local G = allConstants.gauss
+local definicao = math.pi*math.log(((math.exp(2*y))/(2*G^2)), math.exp(1))
+
+print(K)
+print(definicao)
+
+>>2.5849817595793
+>>2.5849817595793
+```
+
+<p>
+Observa-se que a orquestra de constantes da definição da Constante K convergiram para a mesma.
+</p>
+<h3>Constante de Lemniscata</h3>
+<img src="https://user-images.githubusercontent.com/110111018/215287888-11901f72-91b0-4418-99c6-01249640b6e2.PNG">
+<h3>Constante de Plástico</h3>
+<img src="https://user-images.githubusercontent.com/110111018/215251257-9eeb0f41-1f95-4c14-a457-4dd2e9d6d06f.png">
+
