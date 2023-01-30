@@ -12,6 +12,7 @@ O horizonte da matemática é tão vasto e incógnito, que casualmente nos depar
 Quais constantes este módulo contempla?
 <ul>
 <li>Número de ouro: φ</li>
+<li>Constante de Ramanujan</li>
 <li>Constante Apéry: ζ(3)</li>
 <li>Tau: τ</li>
 <li>Constante Euler-Mascheroni: γ</li>
@@ -85,15 +86,37 @@ Quais constantes este módulo contempla?
 <p>
 Embora seja impossível repoduzir a irracionalidade das constantes supracitas, podemos solucioná-las com a maior precisão possível dentro da linguagem Lua, usando 16 casas decimais de seus valores. Abaixo está destacado demonstrações da veracidade que o uso deste módulo fornece à expressões:
 </p>
+
+<h3>Constante de Ramanujan</h3>
+<img src="https://user-images.githubusercontent.com/110111018/215370950-d79810ec-51ea-4eb0-83a0-c9676abf12c9.png">
 <br>
+<p>
+Vamos calcular o valor de pi usando a Constante de Ramanujan (definida aqui pelo valor de 262537412640768743.99999999999925). Para isso, é preciso somente uma operação logarítmica.
+</p>
+
+```lua
+local ramanujan = allConstants.ramanujan
+local piForRamanujan = math.log(ramanujan, math.exp(1))/math.sqrt(163)
+
+print(piForRamanujan)
+print(math.pi)
+
+>>3.1415926535898
+>>3.1415926535898
+```
+
+<p>
+A variável <i>piForRamanujan</i> recebe as operações inversas necessárias para chegar ao valor de pi e, como podemos ver, converge à definição de pi da própria biblioteca Lua.
+</p>
+
 <h3>Constante de Glaisher–Kinkelin</h3>
 <img src="https://user-images.githubusercontent.com/110111018/215250119-ba38afc4-a50f-43d8-b7e0-789fdb61ec5a.png">&nbsp; com &nbsp;
 <img src="https://user-images.githubusercontent.com/110111018/215250118-db63f415-0706-444a-b8ec-ddaf8ded7557.png">
 <br>
 <p>
-Vamos computar a igualdade da Constante de Glaisher–Kinkelin utilizando a definição a cima, onde serão manuseados a Constante Euler-Mascheroni (γ) e a própria constante supracitada.
+Vamos agora comparar o valor da Constante de Glaisher–Kinkelin dada no módulo com a construção de sua definição.
 <br>
-Estabelemos <i>exp = ζ'(2)</i>, <i>A</i> como a Constante de Glaisher–Kinkelin definida no módulo, <i>definicao</i> como a expressão que define A na imagem a cima e <i>y</i> como a Constante Euler-Mascheroni, fazemos a comparação: 
+Estabelecendo <i>A</i> como o valor decimal da Constante de Glaisher–Kinkelin, <i>def</i> como sua definição mostrada a cima, <i>exp</i> como <i>ζ ' (2)</i> e <i>y</i> como a Constante Euler-Mascheroni, calculamos: 
 </p>
 
 ```lua
@@ -110,14 +133,14 @@ print(definicao)
 ```
 
 <p>
-Ou seja, foi possível transcrever a definição da Constante de Glaisher–Kinkelin com a máxima precisão, logrando de resultados satisfatórios tanto no valor predefinido da constante quanto na expressão computada.
+Observa-se que a orquestra de constantes da definição da constante <i>A</i> convergem para seu valor decimal programado.
 </p>
 
 <h3>Constante de Sierpiński</h3>
 <img src="https://user-images.githubusercontent.com/110111018/215251254-3e8860b6-53c0-4d83-922f-5bcee9a3c6d5.png">
 <br>
 <p>
-Agora testaremos o valor estabelecido para a Constante de Sierpiński com a construção de sua definição encontrada a cima. Temos aqui <i>K</i> representando a váriavel mormente no tópico, <i>y</i> a Constante Euler-Mascheroni, <i>G</i> a Constante de Gauss e <i>definicao</i> a expressão resultante em K.
+Fazendo agora outra comparação, usando o valor decimal da Constante de Sierpiński e sua definição explicitada a cima. Temos aqui <i>K</i> representando a váriavel mormente no tópico, <i>y</i> a Constante Euler-Mascheroni, <i>G</i> a Constante de Gauss e <i>def</i> a definição da constante <i>K</i>.
 </p>
 
 ```lua
@@ -134,10 +157,36 @@ print(definicao)
 ```
 
 <p>
-Observa-se que a orquestra de constantes da definição da Constante K convergiram para a mesma.
+Computando a definição da constante <i>K</i> chegamos ao mesmo resultado do valor introduzido no módulo.
 </p>
-<h3>Constante de Lemniscata</h3>
-<img src="https://user-images.githubusercontent.com/110111018/215287888-11901f72-91b0-4418-99c6-01249640b6e2.PNG">
+
 <h3>Constante de Plástico</h3>
 <img src="https://user-images.githubusercontent.com/110111018/215251257-9eeb0f41-1f95-4c14-a457-4dd2e9d6d06f.png">
+<br>
+<p>
+A conhecida Constante de Plástico é o valor que satisfaz a igualdade apresentada. Pode-se computá-la facilmente da seguinte forma:
+</p>
 
+```lua
+local p = allConstants.plastic
+
+print(p^3)
+print(p+1)
+
+>>2.3247179572447
+>>2.3247179572447
+```
+
+<p>
+A igualdade transpare-se utilizando o decimal decimal estabelecido para a Constante de Plástico.
+</p>
+
+<h3>Conclusão</h3>
+<p>
+Fazendo uso do módulo <strong>allConstants</strong> foi possível realizar operações normalmente privilegiadas à papel e caneta ou calculadoras científicas, logrando de exelentes resultados com o máximo de precisão concebível.
+</p>
+
+<h2>Fontes</h2>
+<p>
+Todas as constantes deste módulos são oriundas das enciclopédias <a href="https://wikipedia.org">Wikipédia</a> e <a href="https://oeis.org">OEIS</a> e do acervo matemático da <a href="https://mathworld.wolfram.com/">MathWorld</a>.
+</p>
