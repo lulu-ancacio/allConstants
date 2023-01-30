@@ -1,7 +1,7 @@
 <div align="center">
 <img width=360px height=370px src="https://user-images.githubusercontent.com/110111018/215011072-ce2f4508-2962-4078-961b-0289cf9b73b0.png"/>
 <br>
-<img src="https://img.shields.io/github/license/lulu-ancacio/REPOSITORIO?style=plastic">
+<img src="https://img.shields.io/github/license/lulu-ancacio/allConstants?style=plastic">
 <img src="http://img.shields.io/static/v1?label=language&message=lua&color=rgb(138,43,226)&style=plastic">
 </div>
 
@@ -80,6 +80,9 @@ Quais constantes este módulo contempla?
 <li>Constante de Heptanacci</li>
 <li>Constante de Freiman: F</li>
 <li>Constante de Silver: S</li>
+<li>Constante de Gauss-Kuzmin-Wirsing: λ</li>
+<li>Constante de Alladi-Grinstead</li>
+<li>Constante de Gelo Quadrado de Lieb "Lieb's Square Ice Constant"</li>
 </ul>
 </p>
 <h2>Fidedignidade</h2>
@@ -188,5 +191,5 @@ Fazendo uso do módulo <strong>allConstants</strong> foi possível realizar oper
 
 <h2>Fontes</h2>
 <p>
-Todas as constantes deste módulos são oriundas das enciclopédias <a href="https://wikipedia.org">Wikipédia</a> e <a href="https://oeis.org">OEIS</a> e do acervo matemático da <a href="https://mathworld.wolfram.com/">MathWorld</a>.
+Todas as constantes deste módulos são oriundas das enciclopédias <a href="https://wikipedia.org">Wikipédia</a> e <a href="https://oeis.org">OEIS</a>, do acervo matemático da <a href="https://mathworld.wolfram.com/">MathWorld</a> e da lista de constantes matemáticas da <a href="https://play.google.com/store/apps/details?id=cz.hipercalc">HiPER Calc</a>.
 </p>
