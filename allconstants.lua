@@ -1,6 +1,7 @@
 local allconstants = {}
 
 allconstants.phi                  = 1.6180339887498948
+allconstants.ramanujan            = 262537412640768743.99999999999925
 allconstants.apery                = 1.2020569031595942
 allconstants.tau                  = 6.2831853071795864
 allconstants.eulerMascheroni      = 0.5772156649015328
