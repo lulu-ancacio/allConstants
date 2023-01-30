@@ -85,6 +85,34 @@ Quais constantes este módulo contempla?
 <li>Constante de Gelo Quadrado de Lieb "Lieb's Square Ice Constant"</li>
 </ul>
 </p>
+
+<h2>Importando para seu projeto</h2>
+<p>
+Para consumir <strong>allConstants</strong> em seus objetivos, baixe o arquivo ZIP deste repositório e extraia dele "allconstants.lua". Hospede o módulo no mesmo diretório que seu projeto e efetue o seguinte procedimento dentro do arquivo que usufruirá deste acervo matemático:
+</p>
+<br>
+
+```lua
+local myVariable = require('allconstants')
+```
+
+<p>
+Desde modo, sua variável local terá consigo carregada todas as constantes matemáticas do módulo, e você poderá usá-las conforme sua intenção. Um exemplo:
+</p>
+
+```lua
+local myVariable = require('allconstants')
+local omega = myVariable.omega
+
+print(omega*math.exp(omega))
+
+>>1
+```
+
+<p>
+Na demonstração a cima, a variável <i>omega</i> recebe o valor da Constante Omega (introduzida pelo matemático Leonhard Euler) e é introduzida à principal expressão que seu valor satisfaz: Ω e^(Ω) = 1
+</p>
+
 <h2>Fidedignidade</h2>
 <p>
 Embora seja impossível repoduzir a irracionalidade das constantes supracitas, podemos solucioná-las com a maior precisão possível dentro da linguagem Lua, usando 16 casas decimais de seus valores. Abaixo está destacado demonstrações da veracidade que o uso deste módulo fornece à expressões:
