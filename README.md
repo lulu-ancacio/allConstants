@@ -87,7 +87,7 @@ Quais constantes este módulo contempla?
 </ul>
 </p>
 
-<h2>Importando para seu projeto</h2>
+<h2>Importando para seu projeto (em lua)</h2>
 <p>
 Para consumir <strong>allConstants</strong> em seus objetivos, baixe o arquivo ZIP deste repositório e extraia dele "allconstants.lua". Hospede o módulo no mesmo diretório que seu projeto e efetue o seguinte procedimento dentro do arquivo que usufruirá deste acervo matemático:
 </p>
